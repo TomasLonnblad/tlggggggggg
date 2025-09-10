@@ -17,7 +17,7 @@ if (typeof window !== 'undefined') {
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   useGSAP(
